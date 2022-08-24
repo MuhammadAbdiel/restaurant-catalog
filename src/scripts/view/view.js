@@ -9,7 +9,7 @@ const main = () => {
           <section class="box">
             <div class="rating">
               ${
-                resto.rating > 3.0
+                resto.rating >= 2.5
                   ? '<i class="fa-solid fa-star"></i>'
                   : '<i class="fa-solid fa-star-half"></i>'
               } ${resto.rating}
