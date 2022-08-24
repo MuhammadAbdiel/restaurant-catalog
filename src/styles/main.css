@@ -160,6 +160,11 @@ a.resto {
   position: relative;
 }
 
+.box:hover {
+  transform: scale(1.03);
+  transition: ease-in 0.1s;
+}
+
 .box .rating {
   position: absolute;
   top: 0;
