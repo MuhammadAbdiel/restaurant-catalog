@@ -1,5 +1,5 @@
 {
-  "name": "gofuds-apps",
+  "name": "restfood-apps",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,8 @@
     "build": "webpack --config webpack.prod.js",
     "test": "karma start"
   },
-  "keywords": [
-    "frond-end",
-    "gofuds",
-    "dicoding"
-  ],
-  "author": "Luthfi Alfarisi <luthfialfarizi98@gmail.com>",
+  "keywords": [],
+  "author": "Muhammad Abdiel Firjatullah <abdielfirdie@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.5",
