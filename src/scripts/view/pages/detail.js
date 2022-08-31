@@ -1,6 +1,8 @@
+import Swal from "sweetalert2";
 import ApiRepository from '../../data/api-repository';
-import UrlParser from '../../routes/url-parser';
+import AddReview from "../../utils/add-review";
 import SaveButtonInitiator from '../../utils/save-button-initiator';
+import UrlParser from '../../routes/url-parser';
 import '../../component/loading-indicator';
 import '../../component/restaurant-detail';
 
@@ -29,6 +31,28 @@ class Detail {
     } finally {
       loadingElement.style.display = 'none';
     }
+
+    const btnSubmit = document.querySelector("#submit-review");
+    const nameInput = document.querySelector("#inputName");
+    const reviewInput = document.querySelector("#inputReview");
+
+    btnSubmit.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (nameInput.value === "" || reviewInput.value === "") {
+        Swal.fire({
+          title: "Something went wrong!",
+          text: "No input can't be empty!",
+          icon: "error",
+        });
+
+        nameInput.value = "";
+        reviewInput.value = "";
+      } else {
+        AddReview(url, nameInput.value, reviewInput.value);
+        nameInput.value = "";
+        reviewInput.value = "";
+      }
+    });
   }
 }
 

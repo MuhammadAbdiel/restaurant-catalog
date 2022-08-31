@@ -1,4 +1,4 @@
-import './restaurant-item';
+import "./restaurant-item";
 
 class RestaurantList extends HTMLElement {
   set restaurants(list) {
@@ -7,10 +7,9 @@ class RestaurantList extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = '';
+    this.innerHTML = "";
     this.restaurantList.forEach((resto) => {
-      const restaurantElement = document.createElement('restaurant-item');
-      restaurantElement.className = 'box';
+      const restaurantElement = document.createElement("restaurant-item");
       restaurantElement.restaurantItem = resto;
 
       this.appendChild(restaurantElement);
@@ -18,4 +17,4 @@ class RestaurantList extends HTMLElement {
   }
 }
 
-customElements.define('restaurant-list', RestaurantList);
+customElements.define("restaurant-list", RestaurantList);

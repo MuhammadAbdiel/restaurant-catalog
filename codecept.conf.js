@@ -20,7 +20,7 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
-  name: 'GoFuds',
+  name: 'RESTFood',
   plugins: {
     retryFailedStep: {
       enabled: true,

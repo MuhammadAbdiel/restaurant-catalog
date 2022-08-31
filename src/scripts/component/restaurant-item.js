@@ -10,11 +10,24 @@ class RestaurantItem extends HTMLElement {
 
   render() {
     this.innerHTML = `
-            <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL}${this.restaurant.pictureId}" alt="${this.restaurant.name}">
-            <p class="info">${this.restaurant.city} <b>(${this.restaurant.rating})</b></p>
+      <a class="resto" href="#/detail/${this.restaurant.id}">
+          <section class="box">
+            <div class="rating">
+              ${
+                this.restaurant.rating >= 2.5
+                  ? '<i class="fa-solid fa-star"></i>'
+                  : '<i class="fa-solid fa-star-half"></i>'
+              } ${this.restaurant.rating}
+            </div>
+            <img src="${CONFIG.BASE_IMAGE_URL}${
+      this.restaurant.pictureId
+    }" alt="${this.restaurant.name} Image">
+            <p class="info">${this.restaurant.city}</p>
             <h3 class="title">${this.restaurant.name}</h3>
-            <p>${this.restaurant.description}</p>
-            <a href="#/detail/${this.restaurant.id}" aria-label="See details of ${this.restaurant.name}">See Details</a>`;
+            <p class="text-overflow">${this.restaurant.description}</p>
+        </section>
+      </a>
+    `;
   }
 }
 
