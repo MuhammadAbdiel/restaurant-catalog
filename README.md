@@ -1,7 +1,7 @@
 ## Setup
 
 ```
-git clone https://github.com/MuhammadAbdiel/bookshelf-api.git -b submission-1
+git clone https://github.com/MuhammadAbdiel/restaurant-catalog.git -b submission-1
 ```
 
 ```
