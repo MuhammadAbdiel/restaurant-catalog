@@ -15,6 +15,7 @@ class ApiRepository {
 
   static async addReview(review) {
     const response = await fetch(API_CONFIG.REVIEW, {
+      mode: 'no-cors',
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,7 +23,7 @@ class ApiRepository {
       },
       body: JSON.stringify(review),
     });
-    return response.json();
+    return response;
   }
 }
 
