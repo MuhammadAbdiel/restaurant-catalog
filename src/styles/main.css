@@ -141,6 +141,14 @@ img {
   color: white;
 }
 
+.jumbotron img {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
 .wrapper {
   margin: 20px 5%;
   display: grid;
