@@ -5,24 +5,13 @@
         "node": true
     },
     "extends": [
-        "airbnb-base"
+        "google"
     ],
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
     },
+    "ignorePatterns": ["**/*.js"],
     "rules": {
-        "no-console": "off",
-        "linebreak-style": "off",
-        "import/no-extraneous-dependencies": "off",
-        "quotes": "off",
-        "no-underscore-dangle": "off",
-        "class-methods-use-this": "off",
-        "no-unused-vars": "off",
-        "operator-linebreak": "off",
-        "no-trailing-spaces": "off",
-        "indent": "off",
-        "no-restricted-globals": "off",
-        "comma-dangle": "off"
     }
 }
