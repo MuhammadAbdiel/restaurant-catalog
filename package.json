@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./src",
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
     "test": "karma start",
-    "e2e": "codeceptjs run --steps",
-    "lint": "eslint ./src"
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "Muhammad Abdiel Firjatullah <abdielfirdie@gmail.com>",
@@ -21,9 +21,9 @@
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.6.0",
     "eslint": "^8.23.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import": "^2.26.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "idb": "^5.0.4",
